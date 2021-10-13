@@ -179,4 +179,4 @@ If the logo is detected, it will draw a bounding box around the tr-flag. It will
 **Note** You may get a difference confidence score than the image below.
 ![Test Result Response](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/result-response.png)
 
-Click on “Projects” to go back to main page. “Stop the model” once you’re done with testing.
+Click on **“Projects”** to go back to main page. **“Stop the model”** once you’re done with testing.
