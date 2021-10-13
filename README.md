@@ -18,7 +18,7 @@ Before you start with the lab, download the images from the below compressed fil
 
 Sample dataset  
 ------------  
-> filenin-sultanlari.zip (382 kb) 
+> [filenin-sultanlari.zip](https://github.com/taswar/aws-ai-computer-vision-byod-workshop/blob/main/filenin-sultanlari.zip?raw=true) (4.24 M) 
 
 
 Upload data to S3
