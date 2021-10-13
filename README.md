@@ -158,3 +158,4 @@ In this approach, we will use the demo application we launched at the beginning 
 ![Cloud formation output](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/Cloudformation-output-tab.png)
 
 Once logged in, you will be presented with a page similar to below. 
+![Custom UI](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/CustomLabelWebUI.png)
