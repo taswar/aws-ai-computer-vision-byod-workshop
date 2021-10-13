@@ -11,3 +11,47 @@ Rekognition Object Detection deals with finding objects within an image. To trai
 
 In this lab, we will detect Turkish flag on the Turkish Women Volley Ball team within images using Amazon Rekognition Custom Labels.
 
+# Preprocessing
+If your image has an object, such as a machine part or an animated character, the image needs a bounding box around an object and an object-identifying label. You can have multiple objects within an image. In this step, you add object-level labels and bounding boxes to an image.
+
+Before you start with the lab, download the images from the below compressed file:
+
+Sample dataset  
+------------  
+> filenin-sultanlari.zip (382 kb) 
+
+
+Upload data to S3
+
+To make the labeling process easy, upload and organize the images in a single folder (such as tr-flag) in S3. The path for the images would be similar to rekognitioncustomlabels/tr-flag/.
+
+Supported file formats are PNG and JPEG. The maximum number of images per dataset is 250,000. Make sure that the minimum image dimension of each image file 64 pixels x 64 pixels, and the maximum is 4096 pixels x 4096 pixels.
+
+Other limits are specified [here](https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/limits.html).
+
+## Create a dataset
+
+Navigate to Rekognition on the console and click “Amazon Rekognition”:
+
+Click Use Custom Labels.
+
+On the left sidebar / menu, click datasets.
+
+Provide a dataset name and choose Import images from S3.
+
+Switch to the S3 console, copy and paste the bucket permissions into the bucket that contains your data:
+
+Switch back to the Rekognition console, enter the S3 path, and check Automatic labeling, and click Submit.
+
+Now, as images are labeled automatically, you need to draw bounding boxes on the images. You will click on “Start Labeling” on the right top corner.
+
+Once you’re in labeling mode, you will select the images and click on “Draw bounding box”.
+
+You will be presented a preview of the image and labels on the right.
+
+Label should be auto-selected (for example, “aws”) and all you need to do is to draw bounding box around the object.
+
+If you have multiple objects in an image, you will follow the same process of selecting the label and drawing bounding box around it.
+
+Similarly, you will go through entire set of images to draw bounding box around the objects. Once you’re done, you will click on “Save changes” on the right top corner to come out of labeling mode and saving the changes you made. Your dataset should look similar to below:
+
