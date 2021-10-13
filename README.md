@@ -21,9 +21,9 @@ Sample dataset
 > [filenin-sultanlari.zip](https://github.com/taswar/aws-ai-computer-vision-byod-workshop/blob/main/filenin-sultanlari.zip?raw=true) (4.24 M) 
 
 
-Upload data to S3
+## Upload data to S3
 
-To make the labeling process easy, upload and organize the images in a single folder (such as tr-flag) in S3. The path for the images would be similar to rekognitioncustomlabels/tr-flag/.
+To make the labeling process easy, upload and organize the images in a single folder (such as **tr-flag**) in S3. The path for the images would be similar to **rekognitioncustomlabels/tr-flag/**.
 
 Supported file formats are PNG and JPEG. The maximum number of images per dataset is 250,000. Make sure that the minimum image dimension of each image file 64 pixels x 64 pixels, and the maximum is 4096 pixels x 4096 pixels.
 
@@ -31,9 +31,11 @@ Other limits are specified [here](https://docs.aws.amazon.com/rekognition/latest
 
 ## Create a dataset
 
-Navigate to Rekognition on the console and click “Amazon Rekognition”:
+Navigate to Rekognition on the console and click **“Amazon Rekognition”**:
 
-Click Use Custom Labels.
+!(navigatetorekognition.png)
+
+Click Use **Custom Labels**.
 
 On the left sidebar / menu, click datasets.
 
