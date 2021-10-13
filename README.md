@@ -126,3 +126,20 @@ Once you have a dataset, you can start by creating a project inside of Rekogniti
 ## Note Info
 > The model training process will take **50-60 mins.** Continue to the next section.
 
+---
+
+# Inference
+
+## Launching demo application 
+As the training of the model from previous step continues, launch the Custom Labels demo application. We will use this web application to test the custom model.
+
+You can use click on “Launch on AWS” button to launch the stack in your account. Make sure you use appropriate region.
+
+(https://github.com/aws-samples/amazon-rekognition-custom-labels-demo, "Amazon Rekognition Custom Labels Demo)
+
+## Note
+> Wait for the training to complete before you start with the following steps.
+
+## Inference
+Navigate to the project you trained your model under, wait for the **status** to show TRAINING_COMPLETE and then click the on the model **Name** of the trained model: 
+
