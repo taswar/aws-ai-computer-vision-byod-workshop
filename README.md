@@ -163,6 +163,7 @@ Once logged in, you will be presented with a page similar to below.
 Click on **“Start the model”** for the model you just trained. Wait for the model to reach “RUNNING” state. 
 
 Click on the model name. You will see a page similar to below. 
+![Demo upload](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/demoapplicationtest.png)
 
 Use the following images to test your model.
 ### Sample test dataset 
@@ -173,7 +174,7 @@ Use the following images to test your model.
 
 Upload the images one after the other to see if it can identify tr-flag logo.
 
-If the logo is detected, it will draw a bounding box around the logo. It will also show the confidence score under “Results”. 
+If the logo is detected, it will draw a bounding box around the tr-flag. It will also show the confidence score under **“Results”.** 
 
 
 Click on “Projects” to go back to main page. “Stop the model” once you’re done with testing.
