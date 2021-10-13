@@ -97,8 +97,32 @@ Label should be auto-selected (for example, **“tr-flag”**) and all you need 
 ![Drawingbox](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/drawingbox.png)
 If you have multiple objects in an image, you will follow the same process of selecting the label and drawing bounding box around it.
 
-Similarly, you will go through entire set of images page by page to draw bounding box around the objects. Once you’re done, you will click on “Save changes” on the right top corner to come out of labeling mode and saving the changes you made. Your dataset should show black boxes around the TR-flags.
+Similarly, you will go through entire set of images page by page to draw bounding box around the objects. Once you’re done, you will click on **“Save changes”** on the right top corner to come out of labeling mode and saving the changes you made. Your dataset should show black boxes around the **tr-flag**.
 
 ---
 
 # Training
+
+## Note
+> Make sure you have a usable dataset before you follow along here to train a custom model
+
+Once you have a dataset, you can start by creating a project inside of Rekognition.
+
+## Create a project
+
+**Step 1:** On the left sidebar / menu, click Projects. You may need to open the Hamburger menu.
+
+**Step 2:** On the projects page, click Create project.
+
+**Step 3:** Provide a project name and click the Create project button.
+![Create Project](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/createrekproject.png)
+
+**Step 4:** Click **Train** new model.
+![Train new model](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/trainnewmodel.png)
+
+**Step 5:** Choose a training dataset in the dropdown, click Split training dataset, and click **Train**. We wnat 80% training 20% for testing
+![Split dataset](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/splittrainingdatasets.png)
+
+## Note Info
+> The model training process will take **50-60 mins.** Continue to the next section.
+
