@@ -80,24 +80,24 @@ Other limits are specified [here](https://docs.aws.amazon.com/rekognition/latest
 
 ![permission](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/pastebucketconfiguration.png)
 
-**Step 9:** **Switch back to the Rekognition console**, enter the S3 path, and check **Automatic labeling**, and click **Submit**.
+**Step 9:** **Switch back to the Rekognition console**, the S3 path should already been filled, and check **Automatic labeling**, and click **Submit**.
 
 **Step 10:** Now, as images are labeled automatically, you need to draw bounding boxes on the images. You will click on “Start Labeling” on the right top corner.
 
 ![Start labelling](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/startlabelling.png)
 
-Once you’re in labeling mode, you will select the images and click on “Draw bounding box”.
+Once you’re in labeling mode, you will select the images and click on “Draw bounding box”. Select one page at a time, you can select all the images on page 1, once complete we will move to page 2 and do the exact same actions like below.
 
 ![Boundingboxes](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/boundingboximages.png)
 
 You will be presented a preview of the image and labels on the right.
 
-Label should be auto-selected (for example, **“tr-flag”**) and all you need to do is to draw bounding box around the object.
+Label should be auto-selected (for example, **“tr-flag”**) and all you need to do is to draw bounding box around the object. As seen below I have draw around the flag and include **TUR** in the box.
 
 ![Drawingbox](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/drawingbox.png)
 If you have multiple objects in an image, you will follow the same process of selecting the label and drawing bounding box around it.
 
-Similarly, you will go through entire set of images to draw bounding box around the objects. Once you’re done, you will click on “Save changes” on the right top corner to come out of labeling mode and saving the changes you made. Your dataset should look similar to below:
+Similarly, you will go through entire set of images page by page to draw bounding box around the objects. Once you’re done, you will click on “Save changes” on the right top corner to come out of labeling mode and saving the changes you made. Your dataset should show black boxes around the TR-flags.
 
 ---
 
