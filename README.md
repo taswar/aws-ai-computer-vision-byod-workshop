@@ -159,3 +159,18 @@ In this approach, we will use the demo application we launched at the beginning 
 
 Once logged in, you will be presented with a page similar to below. 
 ![Custom UI](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/CustomLabelWebUI.png)
+
+Click on **“Start the model”** for the model you just trained. Wait for the model to reach “RUNNING” state. 
+
+Click on the model name. You will see a page similar to below. 
+
+Use the following images to test your model.
+### Sample test dataset 
+
+
+Upload the images one after the other to see if it can identify tr-flag logo.
+
+If the logo is detected, it will draw a bounding box around the logo. It will also show the confidence score under “Results”. 
+
+
+Click on “Projects” to go back to main page. “Stop the model” once you’re done with testing.
