@@ -133,9 +133,9 @@ Once you have a dataset, you can start by creating a project inside of Rekogniti
 ## Launching demo application 
 As the training of the model from previous step continues, launch the Custom Labels demo application. We will use this web application to test the custom model.
 
-You can use click on “Launch on AWS” button to launch the stack in your account. Make sure you use appropriate region.
+You can use click on “Launch on AWS” button to launch the stack in your account. Make sure you use the same appropriate region as your model. In our case N.Virginia
 
-(https://github.com/aws-samples/amazon-rekognition-custom-labels-demo, "Amazon Rekognition Custom Labels Demo)
+[Amazon Rekognition Custom Labels Demo](https://github.com/aws-samples/amazon-rekognition-custom-labels-demo)
 
 ## Note
 > Wait for the training to complete before you start with the following steps.
