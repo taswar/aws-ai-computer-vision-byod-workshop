@@ -33,13 +33,21 @@ Other limits are specified [here](https://docs.aws.amazon.com/rekognition/latest
 
 Navigate to Rekognition on the console and click **“Amazon Rekognition”**:
 
-!(navigatetorekognition.png)
+![rekognition](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/navigatetorekognition.png)
 
 Click Use **Custom Labels**.
 
+![customlabels](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/clickcustomlabels.png)
+
 On the left sidebar / menu, click datasets.
 
-Provide a dataset name and choose Import images from S3.
+![datasets](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/clickdatasetsmenu.png)
+
+You may see an image like below for first time setup.
+
+![firsttimesetup](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/firsttimes3.png)
+
+Provide a dataset name and choose **Import images from S3.**
 
 Switch to the S3 console, copy and paste the bucket permissions into the bucket that contains your data:
 
