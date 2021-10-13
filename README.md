@@ -30,7 +30,8 @@ Supported file formats are PNG and JPEG. The maximum number of images per datase
 Other limits are specified [here](https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/limits.html).
 
 **Step 1: Go to  S3**
-- Create a bucket e.g volleyball-username-dd-mm-yyyy (ie. volleyball-taswar-01-01-2021) Host it in the N.Virginia us-east-1 region
+- Search for S3 and open it in a new browser tab
+- Create a bucket e.g volleyball-username-dd-mm-yyyy (ie. *volleyball-taswar-01-01-2021*) Host it in the N.Virginia us-east-1 region
 ![s3](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/creates3bucket.png)
 - Leave the rest as default (you do not need public access or encyrption or tags)
 
@@ -42,47 +43,62 @@ Other limits are specified [here](https://docs.aws.amazon.com/rekognition/latest
 - Upload all the images from the zip file into the folder (Drag and drop all the images in the upload section)
 ![Uploadedfiles](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/s3uploadedfiles.png)
 
+**Step 4: Leave S3 open**
+- Leave the S3 console tab open and jump back to the other console tab of AWS for next part, we will need the s3 section later for adding permission into this bucket.
+
+---
+
 ## Create a dataset
 
-Navigate to Rekognition on the console and click **“Amazon Rekognition”**:
+**Step 1:** In your non S3 tab navigate to Rekognition on the console and click **“Amazon Rekognition”**:
 
 ![rekognition](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/navigatetorekognition.png)
 
-Click Use **Custom Labels**.
+**Step 2:** Click on Use **Custom Labels**.
 
 ![customlabels](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/clickcustomlabels.png)
 
-On the left sidebar / menu, click datasets.
+**Step 3:** On the left sidebar / menu, click datasets. You may need to open the Hamburger menu.
 
 ![datasets](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/clickdatasetsmenu.png)
 
-You may see an image like below for first time setup.
+**Step 4:** You may see an image like below for first time setup.
 
 ![firsttimesetup](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/firsttimes3.png)
 
-Click on **Create Dataset**
+**Step 5:** Click on **Create Dataset**
 
 ![createdataset](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/createdataset.png)
 
-Provide a dataset name and choose **Import images from S3.**
+**Step 6:** Provide a dataset name and choose **Import images from S3.**
 
 ![import s3](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/importimagesfroms3.png)
 
-**Switch to the S3 console**, copy and paste the bucket permissions into the bucket that contains your data:
+**Step 7:** Enter the S3 folder location: (e.g *s3://volleyball-taswar-01-01-2021/*) - Remember the "/" at the end of the location folder. Permission tab will auto be generated below the UI.
+
+**Step 8:** **Switch to the S3 console**, copy and paste the bucket permissions into the bucket that contains your data: In the permission tab and click **Edit** to add the permission on the bucket. What this is doing is giving Rekcognition the permission to access the bucket.
 
 ![permission](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/pastebucketconfiguration.png)
 
-**Switch back to the Rekognition console**, enter the S3 path, and check **Automatic labeling**, and click **Submit**.
+**Step 9:** **Switch back to the Rekognition console**, enter the S3 path, and check **Automatic labeling**, and click **Submit**.
 
-Now, as images are labeled automatically, you need to draw bounding boxes on the images. You will click on “Start Labeling” on the right top corner.
+**Step 10:** Now, as images are labeled automatically, you need to draw bounding boxes on the images. You will click on “Start Labeling” on the right top corner.
+
+![Start labelling](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/startlabelling.png)
 
 Once you’re in labeling mode, you will select the images and click on “Draw bounding box”.
 
+![Boundingboxes](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/boundingboximages.png)
+
 You will be presented a preview of the image and labels on the right.
 
-Label should be auto-selected (for example, “aws”) and all you need to do is to draw bounding box around the object.
+Label should be auto-selected (for example, **“tr-flag”**) and all you need to do is to draw bounding box around the object.
 
+![Drawingbox](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/drawingbox.png)
 If you have multiple objects in an image, you will follow the same process of selecting the label and drawing bounding box around it.
 
 Similarly, you will go through entire set of images to draw bounding box around the objects. Once you’re done, you will click on “Save changes” on the right top corner to come out of labeling mode and saving the changes you made. Your dataset should look similar to below:
 
+---
+
+# Training
