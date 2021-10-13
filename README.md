@@ -29,6 +29,15 @@ Supported file formats are PNG and JPEG. The maximum number of images per datase
 
 Other limits are specified [here](https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/limits.html).
 
+Step 1: Go to  S3 
+- Create a bucket e.g volleyball-username-dd-mm-yyyy (ie. volleyball-taswar-01-01-2021) Host it in the N.Virginia us-east-1 region
+- ![s3](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/creates3bucket.png)
+- Leave the rest as default (you do not need public access or encyrption or tags)
+- Once the bucket is crated then create a folder in the bucket (tr-flag)
+- ![23 folder](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/creates3folder.png)
+- Upload all the images from the zip file into the folder (Drag and drop all the images in the upload section)
+- ![Uploadedfiles](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/s3uploadedfiles.png)
+
 ## Create a dataset
 
 Navigate to Rekognition on the console and click **“Amazon Rekognition”**:
