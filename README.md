@@ -47,11 +47,19 @@ You may see an image like below for first time setup.
 
 ![firsttimesetup](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/firsttimes3.png)
 
+Click on **Create Dataset**
+
+![createdataset](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/createdataset.png)
+
 Provide a dataset name and choose **Import images from S3.**
 
-Switch to the S3 console, copy and paste the bucket permissions into the bucket that contains your data:
+![import s3](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/importimagesfroms3.png)
 
-Switch back to the Rekognition console, enter the S3 path, and check Automatic labeling, and click Submit.
+**Switch to the S3 console**, copy and paste the bucket permissions into the bucket that contains your data:
+
+![permission](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/pastebucketconfiguration.png)
+
+**Switch back to the Rekognition console**, enter the S3 path, and check **Automatic labeling**, and click **Submit**.
 
 Now, as images are labeled automatically, you need to draw bounding boxes on the images. You will click on “Start Labeling” on the right top corner.
 
