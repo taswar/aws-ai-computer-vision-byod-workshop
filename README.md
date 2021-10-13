@@ -166,7 +166,10 @@ Click on the model name. You will see a page similar to below.
 
 Use the following images to test your model.
 ### Sample test dataset 
-
+- [Test image 1](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/test-image1.jpg)
+- [Test image 2](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/test-image2.jpg)
+- [Test image 3](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/test-image3.jpg)
+- [Test image 4](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/test-image4.jpg)
 
 Upload the images one after the other to see if it can identify tr-flag logo.
 
