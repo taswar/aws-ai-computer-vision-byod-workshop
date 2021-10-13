@@ -143,3 +143,18 @@ You can use click on “Launch on AWS” button to launch the stack in your acco
 ## Inference
 Navigate to the project you trained your model under, wait for the **status** to show TRAINING_COMPLETE and then click the on the model **Name** of the trained model: 
 
+Evaluate your model performance details. 
+
+If you’re happy with the performance of your model, you make it available for use by starting it.
+Inference using GUI-based application
+
+In this approach, we will use the demo application we launched at the beginning of the section. Follow the steps below:
+
+1. Open AWS console and switch to “us-east-1” region.
+2. Under services search for “Amazon CloudFormation”.
+3. Find the stack you launched for the demo application.
+4. Go to the “Outputs” tab and copy the URL.
+5. Paste the URL in a browser window.
+6. You would have received the email with credential for the demo application. Use them to log in. You will be asked to change the password.
+
+Once logged in, you will be presented with a page similar to below. 
