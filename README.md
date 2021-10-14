@@ -180,3 +180,6 @@ If the logo is detected, it will draw a bounding box around the tr-flag. It will
 ![Test Result Response](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/result-response.png)
 
 Click on **“Projects”** to go back to main page. **“Stop the model”** once you’re done with testing.
+
+# Disclaimer: 
+Images, brands  used in this workshop are obtained from public domain photos and used solely for education purposes. AWS and the brands are not endorsed.
