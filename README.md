@@ -1,5 +1,16 @@
 # Amazon Rekognition Custom Labels - Turkish Flag Detection
 
+> This workshop is an adaptation from the original Rekognition Workshop [Lab 2](https://rekognition-immersionday.workshop.aws/en/)
+
+The focus will be adding image and video analysis to your applications using AI/ML (deep learning) technology that requires no machine learning expertise to use.
+
+## Computer Vision at AWS
+Computer vision allows machines to identify people, places, and things in images with accuracy at or above human levels with much greater speed and efficiency. Often built with deep learning models, it automates extraction, analysis, classification and understanding of useful information from a single image or a sequence of images. The image data can take many forms, such as single images, video sequences, views from multiple cameras, or three-dimensional data.
+
+Applications are far-reaching, from identifying defects in high speed assembly lines - to autonomous robots - to the analysis of medical images - to identifying products and people in social media.
+
+AWS offers the broadest and deepest set of [machine learning services](https://aws.amazon.com/machine-learning/#Explore_AWS_Machine_Learning_services) and supporting cloud [infrastructure](https://aws.amazon.com/machine-learning/infrastructure/?c=ml&sec=int), putting machine learning in the hands of every developer, data scientist and expert practitioner. AWS is helping more than 100.000 customers accelerate their machine learning journey.
+
 With Amazon Rekognition Custom Labels, you can identify the objects and scenes in images that are specific to your business needs. For example, you can find your logo in social media posts, identify your products on store shelves, classify machine parts in an assembly line, distinguish healthy and infected plants, or detect animated characters in videos.
 
 ![Volley Ball Team](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/volleyball.png)
@@ -8,6 +19,20 @@ With Amazon Rekognition Custom Labels, you can identify the objects and scenes i
 Rekognition Object Detection deals with finding objects within an image. To train your model, Amazon Rekognition Custom Labels require bounding boxes to be drawn around objects and the objects should be labeled in your images.
 
 In this lab, we will detect Turkish flag on the Turkish Women Volley Ball team within images using Amazon Rekognition Custom Labels.
+
+# Target Audience
+Software developers, solutions architects, product managers with no experience in Data Science and Machine Learning. A basic.
+A basic knowledge of Python and Jupyter Notebooks, and basic AWS knowledge is recommended but not required.
+
+## Prerequisites
+AWS Account
+You will be performing the real-life scenarios and activities in  AWS account. Knowledge about AWS basics (AWS console, S3) are required.
+1. Bring your own Account.
+2. AWS teams delivering the workshop will provide you with temporary accounts.
+
+Bring Your Own Data
+You could use 10-50 representative images for your use case. Supported image formats: JPG, PNG. Maximum image size: 15 MB, Minimum size (px): 64 x 64. Maximum size (px): 4096 x 4096. If you don’t have any data, you could use the sample dataset provided in this workshop.
+
 
 # Preprocessing
 If your image has an object, such as a machine part or an animated character, the image needs a bounding box around an object and an object-identifying label. You can have multiple objects within an image. In this step, you add object-level labels and bounding boxes to an image.
