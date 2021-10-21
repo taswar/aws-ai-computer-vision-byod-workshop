@@ -183,12 +183,12 @@ In this approach, we will use the demo application we launched at the beginning 
 ![Cloud formation output](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/Cloudformation-output-tab.png)
 
 Once logged in, you will be presented with a page similar to below. 
-![Custom UI](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/CustomLabelWebUI.png)
+![Custom UI](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/CustomLabelWebUI.png)
 
 Click on **“Start the model”** for the model you just trained. Wait for the model to reach “RUNNING” state. 
 
 Click on the model name. You will see a page similar to below. 
-![Demo upload](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/demoapplicationtest.png)
+![Demo upload](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/demoapplicationtest.png)
 
 Use the following images to test your model.
 ### Sample test dataset 
