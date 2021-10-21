@@ -13,7 +13,7 @@ AWS offers the broadest and deepest set of [machine learning services](https://a
 
 With Amazon Rekognition Custom Labels, you can identify the objects and scenes in images that are specific to your business needs. For example, you can find your logo in social media posts, identify your products on store shelves, classify machine parts in an assembly line, distinguish healthy and infected plants, or detect animated characters in videos.
 
-![Volley Ball Team](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/volleyball.png)
+![Volley Ball Team](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/volleyball.png)
 
 
 Rekognition Object Detection deals with finding objects within an image. To train your model, Amazon Rekognition Custom Labels require bounding boxes to be drawn around objects and the objects should be labeled in your images.
@@ -55,16 +55,16 @@ Other limits are specified [here](https://docs.aws.amazon.com/rekognition/latest
 **Step 1: Go to  S3**
 - Search for S3 and open it in a new browser tab
 - Create a bucket e.g volleyball-username-dd-mm-yyyy (ie. *volleyball-taswar-01-01-2021*) Host it in the N.Virginia us-east-1 region
-![s3](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/creates3bucket.png)
+![s3](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/creates3bucket.png)
 - Leave the rest as default (you do not need public access or encyrption or tags)
 
 **Step 2: Create folder**
 - Once the bucket is created then create a folder in the bucket (tr-flag)
-![23 folder](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/creates3folder.png)
+![23 folder](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/creates3folder.png)
 
 **Step 3: Upload images**
 - Upload all the images from the zip file into the folder (Drag and drop all the images in the upload section)
-![Uploadedfiles](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/s3uploadedfiles.png)
+![Uploadedfiles](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/s3uploadedfiles.png)
 
 **Step 4: Leave S3 open**
 - Leave the S3 console tab open and jump back to the other console tab of AWS for next part, we will need the s3 section later for adding permission into this bucket.
@@ -75,49 +75,49 @@ Other limits are specified [here](https://docs.aws.amazon.com/rekognition/latest
 
 **Step 1:** In your non S3 tab navigate to Rekognition on the console and click **“Amazon Rekognition”**:
 
-![rekognition](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/navigatetorekognition.png)
+![rekognition](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/navigatetorekognition.png)
 
 **Step 2:** Click on Use **Custom Labels**.
 
-![customlabels](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/clickcustomlabels.png)
+![customlabels](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/clickcustomlabels.png)
 
 **Step 3:** On the left sidebar / menu, click datasets. You may need to open the Hamburger menu.
 
-![datasets](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/clickdatasetsmenu.png)
+![datasets](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/clickdatasetsmenu.png)
 
 **Step 4:** You may see an image like below for first time setup.
 
-![firsttimesetup](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/firsttimes3.png)
+![firsttimesetup](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/firsttimes3.png)
 
 **Step 5:** Click on **Create Dataset**
 
-![createdataset](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/createdataset.png)
+![createdataset](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/createdataset.png)
 
 **Step 6:** Provide a dataset name and choose **Import images from S3.**
 
-![import s3](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/importimagesfroms3.png)
+![import s3](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/importimagesfroms3.png)
 
 **Step 7:** Enter the S3 folder location: (e.g *s3://volleyball-taswar-01-01-2021/*) - Remember the "/" at the end of the location folder. Permission tab will auto be generated below the UI.
 
 **Step 8:** **Switch to the S3 console**, copy and paste the bucket permissions into the bucket that contains your data: In the permission tab and click **Edit** to add the permission on the bucket. What this is doing is giving Rekcognition the permission to access the bucket.
 
-![permission](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/pastebucketconfiguration.png)
+![permission](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/pastebucketconfiguration.png)
 
 **Step 9:** **Switch back to the Rekognition console**, the S3 path should already been filled, and check **Automatic labeling**, and click **Submit**.
 
 **Step 10:** Now, as images are labeled automatically, you need to draw bounding boxes on the images. You will click on “Start Labeling” on the right top corner.
 
-![Start labelling](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/startlabelling.png)
+![Start labelling](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/startlabelling.png)
 
 Once you’re in labeling mode, you will select the images and click on “Draw bounding box”. Select one page at a time, you can select all the images on page 1, once complete we will move to page 2 and do the exact same actions like below.
 
-![Boundingboxes](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/boundingboximages.png)
+![Boundingboxes](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/boundingboximages.png)
 
 You will be presented a preview of the image and labels on the right.
 
 Label should be auto-selected (for example, **“tr-flag”**) and all you need to do is to draw bounding box around the object. As seen below I have draw around the flag and include **TUR** in the box.
 
-![Drawingbox](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/drawingbox.png)
+![Drawingbox](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/drawingbox.png)
 If you have multiple objects in an image, you will follow the same process of selecting the label and drawing bounding box around it.
 
 Similarly, you will go through entire set of images page by page to draw bounding box around the objects. Once you’re done, you will click on **“Save changes”** on the right top corner to come out of labeling mode and saving the changes you made. Your dataset should show black boxes around the **tr-flag**.
@@ -138,13 +138,13 @@ Once you have a dataset, you can start by creating a project inside of Rekogniti
 **Step 2:** On the projects page, click Create project.
 
 **Step 3:** Provide a project name and click the Create project button.
-![Create Project](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/createrekproject.png)
+![Create Project](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/createrekproject.png)
 
 **Step 4:** Click **Train** new model.
-![Train new model](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/trainnewmodel.png)
+![Train new model](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/trainnewmodel.png)
 
 **Step 5:** Choose a training dataset in the dropdown, click Split training dataset, and click **Train**. We wnat 80% training 20% for testing
-![Split dataset](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/splittrainingdatasets.png)
+![Split dataset](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/splittrainingdatasets.png)
 
 ## Note Info
 > The model training process will take **50-60 mins.** Continue to the next section.
@@ -180,7 +180,7 @@ In this approach, we will use the demo application we launched at the beginning 
 5. Paste the URL in a browser window.
 6. You would have received the email with credential for the demo application. Use them to log in. You will be asked to change the password.
 
-![Cloud formation output](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/Cloudformation-output-tab.png)
+![Cloud formation output](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/Cloudformation-output-tab.png)
 
 Once logged in, you will be presented with a page similar to below. 
 ![Custom UI](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/CustomLabelWebUI.png)
@@ -192,17 +192,17 @@ Click on the model name. You will see a page similar to below.
 
 Use the following images to test your model.
 ### Sample test dataset 
-- [Test image 1](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/test-image1.jpg)
-- [Test image 2](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/test-image2.jpg)
-- [Test image 3](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/test-image3.jpg)
-- [Test image 4](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/test-image4.jpg)
+- [Test image 1](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/test/test-image1.jpg)
+- [Test image 2](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/test/test-image2.jpg)
+- [Test image 3](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/test/test-image3.jpg)
+- [Test image 4](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/test/test-image4.jpg)
 
 Upload the images one after the other to see if it can identify tr-flag logo.
-![Test Result](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/result.png)
+![Test Result](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/result.png)
 
 If the logo is detected, it will draw a bounding box around the tr-flag. It will also show the confidence score under **“Results”.** 
 **Note** You may get a difference confidence score than the image below.
-![Test Result Response](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/result-response.png)
+![Test Result Response](https://raw.githubusercontent.com/taswar/aws-ai-computer-vision-byod-workshop/main/images/result-response.png)
 
 Click on **“Projects”** to go back to main page. **“Stop the model”** once you’re done with testing.
 
