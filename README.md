@@ -28,7 +28,7 @@ A basic knowledge of Python and Jupyter Notebooks, and basic AWS knowledge is re
 AWS Account
 You will be performing the real-life scenarios and activities in  AWS account. Knowledge about AWS basics (AWS console, S3) are required.
 1. Bring your own Account.
-2. AWS teams delivering the workshop will provide you with temporary accounts.
+2. AWS teams delivering the workshop will provide you with credits for your accounts. **(Note: This workshop does not run on Event Engine)**
 
 Bring Your Own Data
 You could use 10-50 representative images for your use case. Supported image formats: JPG, PNG. Maximum image size: 15 MB, Minimum size (px): 64 x 64. Maximum size (px): 4096 x 4096. If you don’t have any data, you could use the sample dataset provided in this workshop.
